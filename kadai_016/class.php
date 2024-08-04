@@ -17,7 +17,7 @@
         }
 
         public function show_price(){
-            return $this->price;
+            echo $this->price;
         }
     }
 
@@ -27,7 +27,7 @@
         private $weight;
 
         public function show_height(){
-            return $this->height;
+            echo $this->height;
         }
 
         public function __construct(string $name, int $height, int $weight) {
@@ -47,11 +47,11 @@
 
     echo "<br>";
 
-    echo $potato->show_price();
+    $potato->show_price();
 
     echo "<br>";
 
-    echo $dog->show_height();
+    $dog->show_height();
 
 
      ?>
